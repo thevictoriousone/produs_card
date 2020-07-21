@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+#img_card_puma {
+    height: 61px;
+    width: 96px;
+}
+.logo_puma {
+    margin-top: 10px;
+    width: 120px;
+}
+.product_card {
+    width: 300px;
+    position: relative;
+    box-shadow: 1px 1px 25px 2px #5f5f5f73;
+    height: 413px;
+    border-radius: 16px;
+    overflow: hidden;
+    top: 50px;
+}
+.product_card:hover {
+    transform: scale(1.02);
+}
+#produs_img_1 {
+    height: 250px;
+    width: 205px;
+    position: relative;
+}
+.product_img {
+   margin-left: 54px;
+}
+.price {
+    margin-left: 13px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: -30px;
+}
+.price span {
+    color: #c2fb04;
+    font-size: 50px;
+}
+.add_to_fav {
+    margin-left: 24px;
+    margin-right: 21px;
+    text-decoration: none;
+    background: hsl(74, 97%, 50%);
+    padding: 30px 20px;
+    color: aliceblue;
+    font-size: 18px;
+    border-radius: 16px;
+   text-align: center;
+   height: 0px;
+   width: 129px;
+   padding-top: 10px;
+}
+.add_to_fav:hover {
+    transform: scale(1.1);
+}
+.product_cerc {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background-color: #c2fb04;
+    border-radius: 50%;
+    margin-left: 104px;
+    margin-top: -100px;
+}
+
+.product_colors .color {
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+.product_colors .color input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.product_colors .color .color_check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #444;
+}
+.colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+}
+
+.colors .color {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.colors .color span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    filter: grayscale(50%);
+}
+
+.colors .color:first-child span {
+    background-color: red;
+}
+
+.colors .color:nth-child(2) span {
+    background-color: #c2fb04;
+}
+
+.colors .color:last-child span {
+    background-color: blue;
+}
+
+.colors .color input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+.colors .color input:checked~span {
+    border: 2px solid #666;
+    filter: grayscale(0);
+    top: -2px;
+}
+.partea_de_jos_buton {
+    display: flex;
+    margin-top: 27px;
+}
+.add_to_fav a {
+    color: white;
+}
